@@ -1,0 +1,2538 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bd49dfd5fb6d2dfb73eec6cdf3a1bff5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+<div style="position:fixed;bottom:24px;left:12px;z-index:9999;width:310px;
+            background:rgba(255,255,255,0.95);padding:10px 12px;border-radius:6px;
+            box-shadow:0 1px 5px rgba(0,0,0,0.3);font-family:Arial,sans-serif;
+            font-size:12px;line-height:1.4;color:#222">
+  <div style="font-size:15px;font-weight:bold;margin-bottom:4px">Vanier: What Residents Told Us</div>
+  Notes from a community climate equity workshop. Toggle themes at top right and click a point to read the note.
+  <div style="margin-top:6px;color:#555">Points sharing a location are spread slightly so each can be clicked.
+  Project partners: Ecology Ottawa and CAWI. [Brackets] mark hard-to-read handwriting. Map by Prosper Ocheme.
+  #30DayMapChallenge Day 13: Interactions</div>
+</div>
+    
+            <div class="folium-map" id="map_bd49dfd5fb6d2dfb73eec6cdf3a1bff5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bd49dfd5fb6d2dfb73eec6cdf3a1bff5 = L.map(
+                "map_bd49dfd5fb6d2dfb73eec6cdf3a1bff5",
+                {
+                    center: [45.43779704554009, -75.66432153562519],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_bd49dfd5fb6d2dfb73eec6cdf3a1bff5);
+
+            
+
+        
+    
+            var tile_layer_cfc2467c535afa4ffe4d92537005eea3 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 16,
+  "maxNativeZoom": 16,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Esri, HERE, Garmin, \u0026copy; OpenStreetMap contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_cfc2467c535afa4ffe4d92537005eea3.addTo(map_bd49dfd5fb6d2dfb73eec6cdf3a1bff5);
+        
+    
+            var feature_group_c0bb2c3f3bc26d857730c1c98960b7cc = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_8571edf71ea1560568d3aaa2337c1f0d = L.circleMarker(
+                [45.4385325, -75.6649736],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5BBF3A", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c0bb2c3f3bc26d857730c1c98960b7cc);
+        
+    
+        var popup_faf37802cc21d516a921d96f451e142c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_008914e9417ae478a4074070f70c3eed = $(`<div id="html_008914e9417ae478a4074070f70c3eed" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Vanier / Overbrook general</b><br><span style="color:#5BBF3A">&#9679;</span> Greenspaces<br><br>Tree canopy problem in Vanier. City spent $1M towards recently for Vanier + Overbrook, but never followed through. Years late, focused on planting in Centretown instead</div></div>`)[0];
+                popup_faf37802cc21d516a921d96f451e142c.setContent(html_008914e9417ae478a4074070f70c3eed);
+            
+        
+
+        circle_marker_8571edf71ea1560568d3aaa2337c1f0d.bindPopup(popup_faf37802cc21d516a921d96f451e142c)
+        ;
+
+        
+    
+    
+            circle_marker_8571edf71ea1560568d3aaa2337c1f0d.bindTooltip(
+                `<div>
+                     Vanier / Overbrook general
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f1ce240988be7f1757a43bb65db05fa = L.circleMarker(
+                [45.438527, -75.673214],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5BBF3A", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c0bb2c3f3bc26d857730c1c98960b7cc);
+        
+    
+        var popup_8c9167eb8b1980018e5537641cb72c83 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ddad66c33e5ede1a40a06d53676e7ae3 = $(`<div id="html_ddad66c33e5ede1a40a06d53676e7ae3" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Meilleur Priv / Vanier Pkwy</b><br><span style="color:#5BBF3A">&#9679;</span> Greenspaces<br><br>The pond → exercise → connection → nature</div></div>`)[0];
+                popup_8c9167eb8b1980018e5537641cb72c83.setContent(html_ddad66c33e5ede1a40a06d53676e7ae3);
+            
+        
+
+        circle_marker_2f1ce240988be7f1757a43bb65db05fa.bindPopup(popup_8c9167eb8b1980018e5537641cb72c83)
+        ;
+
+        
+    
+    
+            circle_marker_2f1ce240988be7f1757a43bb65db05fa.bindTooltip(
+                `<div>
+                     Meilleur Priv / Vanier Pkwy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_300024c933fef51eb16f718b5d350dab = L.circleMarker(
+                [45.4376068, -75.672635],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5BBF3A", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c0bb2c3f3bc26d857730c1c98960b7cc);
+        
+    
+        var popup_238f361c0cced26e8a46cbccf10c2df6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_af0122b8c73b282a4020ecc70c43b13d = $(`<div id="html_af0122b8c73b282a4020ecc70c43b13d" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Meilleur / Vanier Pkwy area</b><br><span style="color:#5BBF3A">&#9679;</span> Greenspaces<br><br>[unclear] park improved movement [unclear]</div></div>`)[0];
+                popup_238f361c0cced26e8a46cbccf10c2df6.setContent(html_af0122b8c73b282a4020ecc70c43b13d);
+            
+        
+
+        circle_marker_300024c933fef51eb16f718b5d350dab.bindPopup(popup_238f361c0cced26e8a46cbccf10c2df6)
+        ;
+
+        
+    
+    
+            circle_marker_300024c933fef51eb16f718b5d350dab.bindTooltip(
+                `<div>
+                     Meilleur / Vanier Pkwy area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf5acfae05d415f5df2048307b1b3cb9 = L.circleMarker(
+                [45.438414, -75.6713853],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5BBF3A", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c0bb2c3f3bc26d857730c1c98960b7cc);
+        
+    
+        var popup_f8c69494f156eba78255c89b6b8db9d3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_855aa31e0c4c3123de554c09ef895fc6 = $(`<div id="html_855aa31e0c4c3123de554c09ef895fc6" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>St-Ambroise / Carillon</b><br><span style="color:#5BBF3A">&#9679;</span> Greenspaces<br><br>Splash parks for [baby] &amp; other people &amp; dogs</div></div>`)[0];
+                popup_f8c69494f156eba78255c89b6b8db9d3.setContent(html_855aa31e0c4c3123de554c09ef895fc6);
+            
+        
+
+        circle_marker_cf5acfae05d415f5df2048307b1b3cb9.bindPopup(popup_f8c69494f156eba78255c89b6b8db9d3)
+        ;
+
+        
+    
+    
+            circle_marker_cf5acfae05d415f5df2048307b1b3cb9.bindTooltip(
+                `<div>
+                     St-Ambroise / Carillon
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5fe109e88f44aec5c60604f7df01b029 = L.circleMarker(
+                [45.42871273920132, -75.67523994359523],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5BBF3A", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c0bb2c3f3bc26d857730c1c98960b7cc);
+        
+    
+        var popup_ead941c763fd9a3636596aeecc4b5b85 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac7904baf8e76e8b0b88a602204d99ae = $(`<div id="html_ac7904baf8e76e8b0b88a602204d99ae" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Strathcona Park area</b><br><span style="color:#5BBF3A">&#9679;</span> Greenspaces<br><br>RSC — b. Sport, b. Exercise</div></div>`)[0];
+                popup_ead941c763fd9a3636596aeecc4b5b85.setContent(html_ac7904baf8e76e8b0b88a602204d99ae);
+            
+        
+
+        circle_marker_5fe109e88f44aec5c60604f7df01b029.bindPopup(popup_ead941c763fd9a3636596aeecc4b5b85)
+        ;
+
+        
+    
+    
+            circle_marker_5fe109e88f44aec5c60604f7df01b029.bindTooltip(
+                `<div>
+                     Strathcona Park area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa97213d22da06ebfdc8349f74b5ff02 = L.circleMarker(
+                [45.430904357836376, -75.668738141678],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5BBF3A", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c0bb2c3f3bc26d857730c1c98960b7cc);
+        
+    
+        var popup_638cadcc95b6372dd6cea390e32d38f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a1de72859b7109612b57c2f69d096b6 = $(`<div id="html_9a1de72859b7109612b57c2f69d096b6" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>North River Road Parkette</b><br><span style="color:#5BBF3A">&#9679;</span> Greenspaces<br><br>Abandoned by neglect</div></div>`)[0];
+                popup_638cadcc95b6372dd6cea390e32d38f4.setContent(html_9a1de72859b7109612b57c2f69d096b6);
+            
+        
+
+        circle_marker_aa97213d22da06ebfdc8349f74b5ff02.bindPopup(popup_638cadcc95b6372dd6cea390e32d38f4)
+        ;
+
+        
+    
+    
+            circle_marker_aa97213d22da06ebfdc8349f74b5ff02.bindTooltip(
+                `<div>
+                     North River Road Parkette
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d0fd9a17c1117e0d31b168d8d1f866ee = L.circleMarker(
+                [45.4370065, -75.6576426],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5BBF3A", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c0bb2c3f3bc26d857730c1c98960b7cc);
+        
+    
+        var popup_4a356ac4caecefc8b2e02143ba8a1669 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b558b3a7f4aff7579de09d889b9db2f6 = $(`<div id="html_b558b3a7f4aff7579de09d889b9db2f6" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Janeville Park</b><br><span style="color:#5BBF3A">&#9679;</span> Greenspaces<br><br>Janeville Park</div></div>`)[0];
+                popup_4a356ac4caecefc8b2e02143ba8a1669.setContent(html_b558b3a7f4aff7579de09d889b9db2f6);
+            
+        
+
+        circle_marker_d0fd9a17c1117e0d31b168d8d1f866ee.bindPopup(popup_4a356ac4caecefc8b2e02143ba8a1669)
+        ;
+
+        
+    
+    
+            circle_marker_d0fd9a17c1117e0d31b168d8d1f866ee.bindTooltip(
+                `<div>
+                     Janeville Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6971f69f537ab3ff6393c3f1f843a0bd = L.circleMarker(
+                [45.4332459, -75.6641089],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5BBF3A", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c0bb2c3f3bc26d857730c1c98960b7cc);
+        
+    
+        var popup_a7de29a87518fd52bc78aa736ad1f8a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b7a0b1e809f1690c202effffaef9079 = $(`<div id="html_7b7a0b1e809f1690c202effffaef9079" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Jeanne-Mance St area</b><br><span style="color:#5BBF3A">&#9679;</span> Greenspaces<br><br>There are 5 big planters that are no longer maintained by the City. I plant native plant[s]</div></div>`)[0];
+                popup_a7de29a87518fd52bc78aa736ad1f8a6.setContent(html_7b7a0b1e809f1690c202effffaef9079);
+            
+        
+
+        circle_marker_6971f69f537ab3ff6393c3f1f843a0bd.bindPopup(popup_a7de29a87518fd52bc78aa736ad1f8a6)
+        ;
+
+        
+    
+    
+            circle_marker_6971f69f537ab3ff6393c3f1f843a0bd.bindTooltip(
+                `<div>
+                     Jeanne-Mance St area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a247c56755092cec26a5d621e2e27d52 = L.circleMarker(
+                [45.43969925783638, -75.67036151193071],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5BBF3A", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c0bb2c3f3bc26d857730c1c98960b7cc);
+        
+    
+        var popup_d759ee7dd2f06aeacabd1bc1d9cf9ef2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2526a2442f894a958c5433f24a1e4297 = $(`<div id="html_2526a2442f894a958c5433f24a1e4297" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Vanier general</b><br><span style="color:#5BBF3A">&#9679;</span> Greenspaces<br><br>Not maintained</div></div>`)[0];
+                popup_d759ee7dd2f06aeacabd1bc1d9cf9ef2.setContent(html_2526a2442f894a958c5433f24a1e4297);
+            
+        
+
+        circle_marker_a247c56755092cec26a5d621e2e27d52.bindPopup(popup_d759ee7dd2f06aeacabd1bc1d9cf9ef2)
+        ;
+
+        
+    
+    
+            circle_marker_a247c56755092cec26a5d621e2e27d52.bindTooltip(
+                `<div>
+                     Vanier general
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_91f76122163e4fa2b2697edad0453a66 = L.circleMarker(
+                [45.440523957836376, -75.66272750914058],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5BBF3A", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c0bb2c3f3bc26d857730c1c98960b7cc);
+        
+    
+        var popup_c98cc5db9e8590a07f1d15a346a39bf9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4e11e94e3a3c66a59ab97244a7060bf6 = $(`<div id="html_4e11e94e3a3c66a59ab97244a7060bf6" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Vanier general</b><br><span style="color:#5BBF3A">&#9679;</span> Greenspaces<br><br>Tree canopy problem in Vanier. City spent $1M towards recently for Vanier + Overbrook, but never followed through. Years late, focused on planting in Centretown instead</div></div>`)[0];
+                popup_c98cc5db9e8590a07f1d15a346a39bf9.setContent(html_4e11e94e3a3c66a59ab97244a7060bf6);
+            
+        
+
+        circle_marker_91f76122163e4fa2b2697edad0453a66.bindPopup(popup_c98cc5db9e8590a07f1d15a346a39bf9)
+        ;
+
+        
+    
+    
+            circle_marker_91f76122163e4fa2b2697edad0453a66.bindTooltip(
+                `<div>
+                     Vanier general
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bfd07cc10e35d51fe00e2fe0f94c2405 = L.circleMarker(
+                [45.44006666079867, -75.66337925130173],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5BBF3A", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c0bb2c3f3bc26d857730c1c98960b7cc);
+        
+    
+        var popup_2464336994c2020ede874ef9822d4167 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_17bbf64689a5ba7d78d6f7aaba500c7b = $(`<div id="html_17bbf64689a5ba7d78d6f7aaba500c7b" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Vanier general</b><br><span style="color:#5BBF3A">&#9679;</span> Greenspaces<br><br>[Something about] planting new [trees?] due to [unclear], not ground to [unclear] holes — partially obscured</div></div>`)[0];
+                popup_2464336994c2020ede874ef9822d4167.setContent(html_17bbf64689a5ba7d78d6f7aaba500c7b);
+            
+        
+
+        circle_marker_bfd07cc10e35d51fe00e2fe0f94c2405.bindPopup(popup_2464336994c2020ede874ef9822d4167)
+        ;
+
+        
+    
+    
+            circle_marker_bfd07cc10e35d51fe00e2fe0f94c2405.bindTooltip(
+                `<div>
+                     Vanier general
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d832c481306493d0cca684b3983454ea = L.circleMarker(
+                [45.43987724216362, -75.66310929085941],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5BBF3A", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c0bb2c3f3bc26d857730c1c98960b7cc);
+        
+    
+        var popup_275e13f19909c396e71d20ca1b3db238 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8c382f7e53e670ccc4c2dbcfcceda285 = $(`<div id="html_8c382f7e53e670ccc4c2dbcfcceda285" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Senior centre Vanier</b><br><span style="color:#5BBF3A">&#9679;</span> Greenspaces<br><br>Senior centre built raised gardens &amp; rest spot for seniors. Does plant exchange with VSE.</div></div>`)[0];
+                popup_275e13f19909c396e71d20ca1b3db238.setContent(html_8c382f7e53e670ccc4c2dbcfcceda285);
+            
+        
+
+        circle_marker_d832c481306493d0cca684b3983454ea.bindPopup(popup_275e13f19909c396e71d20ca1b3db238)
+        ;
+
+        
+    
+    
+            circle_marker_d832c481306493d0cca684b3983454ea.bindTooltip(
+                `<div>
+                     Senior centre Vanier
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_53607f5ac0423087b00122590435914b = L.circleMarker(
+                [45.44006666079867, -75.66245754869826],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5BBF3A", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c0bb2c3f3bc26d857730c1c98960b7cc);
+        
+    
+        var popup_78d5d6c16347a3915ac5d5875145b7d3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03f47ea7d0e77a3bfda9f9bc9fd4bec5 = $(`<div id="html_03f47ea7d0e77a3bfda9f9bc9fd4bec5" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Vanier general</b><br><span style="color:#5BBF3A">&#9679;</span> Greenspaces<br><br>City has a Plant Your Space program where they come to dig &amp; plant trees — but catered to private property. 70% rentals in Vanier</div></div>`)[0];
+                popup_78d5d6c16347a3915ac5d5875145b7d3.setContent(html_03f47ea7d0e77a3bfda9f9bc9fd4bec5);
+            
+        
+
+        circle_marker_53607f5ac0423087b00122590435914b.bindPopup(popup_78d5d6c16347a3915ac5d5875145b7d3)
+        ;
+
+        
+    
+    
+            circle_marker_53607f5ac0423087b00122590435914b.bindTooltip(
+                `<div>
+                     Vanier general
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_56dcde4551bba4a661e031dcaca27e05 = L.circleMarker(
+                [45.4437328, -75.6621483],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5BBF3A", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c0bb2c3f3bc26d857730c1c98960b7cc);
+        
+    
+        var popup_2d0df116868be5d33b241f11af8e13ae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_56d963ea969a3a481c6e4daf417ae8d4 = $(`<div id="html_56d963ea969a3a481c6e4daf417ae8d4" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Richelieu Park</b><br><span style="color:#5BBF3A">&#9679;</span> Greenspaces<br><br>Richelieu Park — smell of leaves, freshness, birds / Parc Richelieu (French)</div></div>`)[0];
+                popup_2d0df116868be5d33b241f11af8e13ae.setContent(html_56d963ea969a3a481c6e4daf417ae8d4);
+            
+        
+
+        circle_marker_56dcde4551bba4a661e031dcaca27e05.bindPopup(popup_2d0df116868be5d33b241f11af8e13ae)
+        ;
+
+        
+    
+    
+            circle_marker_56dcde4551bba4a661e031dcaca27e05.bindTooltip(
+                `<div>
+                     Richelieu Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_23a4e29e1c220b607c87ab13c9f03e0f = L.circleMarker(
+                [45.43536243920133, -75.67230808930468],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5BBF3A", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c0bb2c3f3bc26d857730c1c98960b7cc);
+        
+    
+        var popup_65c3d05b69d139251ba1de98e2d9387f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_13469d5afd7ffcf7da351b068c417f6f = $(`<div id="html_13469d5afd7ffcf7da351b068c417f6f" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Tudor Pl / Montreal Rd</b><br><span style="color:#5BBF3A">&#9679;</span> Greenspaces<br><br>Bridges/access — waterways are a huge positive</div></div>`)[0];
+                popup_65c3d05b69d139251ba1de98e2d9387f.setContent(html_13469d5afd7ffcf7da351b068c417f6f);
+            
+        
+
+        circle_marker_23a4e29e1c220b607c87ab13c9f03e0f.bindPopup(popup_65c3d05b69d139251ba1de98e2d9387f)
+        ;
+
+        
+    
+    
+            circle_marker_23a4e29e1c220b607c87ab13c9f03e0f.bindTooltip(
+                `<div>
+                     Tudor Pl / Montreal Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a745fbe47f9013118ba189e6a6b6bd00 = L.circleMarker(
+                [45.4402006, -75.663916043709],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5BBF3A", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c0bb2c3f3bc26d857730c1c98960b7cc);
+        
+    
+        var popup_ec6f742b4556bd612068bd979e9a246d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a78caf742beb623bc0f1073fe6716e96 = $(`<div id="html_a78caf742beb623bc0f1073fe6716e96" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Vanier general</b><br><span style="color:#5BBF3A">&#9679;</span> Greenspaces<br><br>Many spaces in Vanier have been demolished</div></div>`)[0];
+                popup_ec6f742b4556bd612068bd979e9a246d.setContent(html_a78caf742beb623bc0f1073fe6716e96);
+            
+        
+
+        circle_marker_a745fbe47f9013118ba189e6a6b6bd00.bindPopup(popup_ec6f742b4556bd612068bd979e9a246d)
+        ;
+
+        
+    
+    
+            circle_marker_a745fbe47f9013118ba189e6a6b6bd00.bindTooltip(
+                `<div>
+                     Vanier general
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a9cd376222c87d7dfe79eec21717b1b = L.circleMarker(
+                [45.43970562525317, -75.66221295936815],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5BBF3A", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c0bb2c3f3bc26d857730c1c98960b7cc);
+        
+    
+        var popup_1596060b0ee7a91e225d7a262399a3b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b03e8c10334c28141a180f4d04d00f36 = $(`<div id="html_b03e8c10334c28141a180f4d04d00f36" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Vanier general</b><br><span style="color:#5BBF3A">&#9679;</span> Greenspaces<br><br>Last year found out (Sandy Hill) ice rink is open all year for skating</div></div>`)[0];
+                popup_1596060b0ee7a91e225d7a262399a3b4.setContent(html_b03e8c10334c28141a180f4d04d00f36);
+            
+        
+
+        circle_marker_5a9cd376222c87d7dfe79eec21717b1b.bindPopup(popup_1596060b0ee7a91e225d7a262399a3b4)
+        ;
+
+        
+    
+    
+            circle_marker_5a9cd376222c87d7dfe79eec21717b1b.bindTooltip(
+                `<div>
+                     Vanier general
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_c0bb2c3f3bc26d857730c1c98960b7cc.addTo(map_bd49dfd5fb6d2dfb73eec6cdf3a1bff5);
+        
+    
+            var feature_group_3377be5f37b91da17c84a61aaa00bae6 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_a1c98dff498cfeacdf28466bc72dc404 = L.circleMarker(
+                [45.4415551, -75.6679699],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4A90E2", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3377be5f37b91da17c84a61aaa00bae6);
+        
+    
+        var popup_8b859e620e8f5da83796e9edb6aa657c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b199bd0e150780a7cd55a484aabb97ed = $(`<div id="html_b199bd0e150780a7cd55a484aabb97ed" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Ste-Cécile / Marquette</b><br><span style="color:#4A90E2">&#9679;</span> Transit & Biking<br><br>I bought a 3 wheel scooter &amp; love it. Parking is no problem</div></div>`)[0];
+                popup_8b859e620e8f5da83796e9edb6aa657c.setContent(html_b199bd0e150780a7cd55a484aabb97ed);
+            
+        
+
+        circle_marker_a1c98dff498cfeacdf28466bc72dc404.bindPopup(popup_8b859e620e8f5da83796e9edb6aa657c)
+        ;
+
+        
+    
+    
+            circle_marker_a1c98dff498cfeacdf28466bc72dc404.bindTooltip(
+                `<div>
+                     Ste-Cécile / Marquette
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_66f70f82cf7527db38bddec88c46bccb = L.circleMarker(
+                [45.4345333, -75.685139],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4A90E2", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3377be5f37b91da17c84a61aaa00bae6);
+        
+    
+        var popup_30df5a135116651e5130d8e5fce704eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dae09b6bd224409c82f30e05de1de73d = $(`<div id="html_dae09b6bd224409c82f30e05de1de73d" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Vanier Pkwy / Cousineau</b><br><span style="color:#4A90E2">&#9679;</span> Transit & Biking<br><br>I can bike to Beechwood visitors in/out 40 min</div></div>`)[0];
+                popup_30df5a135116651e5130d8e5fce704eb.setContent(html_dae09b6bd224409c82f30e05de1de73d);
+            
+        
+
+        circle_marker_66f70f82cf7527db38bddec88c46bccb.bindPopup(popup_30df5a135116651e5130d8e5fce704eb)
+        ;
+
+        
+    
+    
+            circle_marker_66f70f82cf7527db38bddec88c46bccb.bindTooltip(
+                `<div>
+                     Vanier Pkwy / Cousineau
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c59bcfb2f22c546543b4d66d5e8c8b38 = L.circleMarker(
+                [45.4389746, -75.6618984],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4A90E2", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3377be5f37b91da17c84a61aaa00bae6);
+        
+    
+        var popup_bcc85831b4e72f781f79aa929d537a99 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_58d7e146dc1b2a6f7cdd367685f0f02c = $(`<div id="html_58d7e146dc1b2a6f7cdd367685f0f02c" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Montfort St area</b><br><span style="color:#4A90E2">&#9679;</span> Transit & Biking<br><br>Broken bike lane sticks — dangerous</div></div>`)[0];
+                popup_bcc85831b4e72f781f79aa929d537a99.setContent(html_58d7e146dc1b2a6f7cdd367685f0f02c);
+            
+        
+
+        circle_marker_c59bcfb2f22c546543b4d66d5e8c8b38.bindPopup(popup_bcc85831b4e72f781f79aa929d537a99)
+        ;
+
+        
+    
+    
+            circle_marker_c59bcfb2f22c546543b4d66d5e8c8b38.bindTooltip(
+                `<div>
+                     Montfort St area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c86bf7a8e0394813237b715067543efb = L.circleMarker(
+                [45.4353294, -75.66538],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4A90E2", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3377be5f37b91da17c84a61aaa00bae6);
+        
+    
+        var popup_dbe720b89cd895b4c29746c2411eb627 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8116c66ecfdcbe40213b118d53beb774 = $(`<div id="html_8116c66ecfdcbe40213b118d53beb774" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Vanier Pkwy / Emond</b><br><span style="color:#4A90E2">&#9679;</span> Transit & Biking<br><br>June 7 Bike Festival — giving away 120 helmets this year, increase</div></div>`)[0];
+                popup_dbe720b89cd895b4c29746c2411eb627.setContent(html_8116c66ecfdcbe40213b118d53beb774);
+            
+        
+
+        circle_marker_c86bf7a8e0394813237b715067543efb.bindPopup(popup_dbe720b89cd895b4c29746c2411eb627)
+        ;
+
+        
+    
+    
+            circle_marker_c86bf7a8e0394813237b715067543efb.bindTooltip(
+                `<div>
+                     Vanier Pkwy / Emond
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_25202db1297043ba33de6b9ad3385003 = L.circleMarker(
+                [45.43950983920133, -75.67009155543421],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4A90E2", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3377be5f37b91da17c84a61aaa00bae6);
+        
+    
+        var popup_15f420ebb04fedc44a50f62dbb3cac32 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d40ff998a918668e36362364aad94187 = $(`<div id="html_d40ff998a918668e36362364aad94187" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Vanier general</b><br><span style="color:#4A90E2">&#9679;</span> Transit & Biking<br><br>Unreliable LRT — Top 3 bus routes (12, 15, 7/14) — cancellations go through Vanier</div></div>`)[0];
+                popup_15f420ebb04fedc44a50f62dbb3cac32.setContent(html_d40ff998a918668e36362364aad94187);
+            
+        
+
+        circle_marker_25202db1297043ba33de6b9ad3385003.bindPopup(popup_15f420ebb04fedc44a50f62dbb3cac32)
+        ;
+
+        
+    
+    
+            circle_marker_25202db1297043ba33de6b9ad3385003.bindTooltip(
+                `<div>
+                     Vanier general
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_adea339b47b3048580d1fa9521bf1f7f = L.circleMarker(
+                [45.4319066, -75.6697442],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4A90E2", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3377be5f37b91da17c84a61aaa00bae6);
+        
+    
+        var popup_f63e3001857306fdc1a14771316da6b7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6e7ad02772d4cfc75f65e7be36ce589 = $(`<div id="html_c6e7ad02772d4cfc75f65e7be36ce589" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Selkirk St area</b><br><span style="color:#4A90E2">&#9679;</span> Transit & Biking<br><br>Vareli [Vanier?] LRT no[t] po[pular?]</div></div>`)[0];
+                popup_f63e3001857306fdc1a14771316da6b7.setContent(html_c6e7ad02772d4cfc75f65e7be36ce589);
+            
+        
+
+        circle_marker_adea339b47b3048580d1fa9521bf1f7f.bindPopup(popup_f63e3001857306fdc1a14771316da6b7)
+        ;
+
+        
+    
+    
+            circle_marker_adea339b47b3048580d1fa9521bf1f7f.bindTooltip(
+                `<div>
+                     Selkirk St area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_01ab90e737c08ab6661c62e0dc8bd12d = L.circleMarker(
+                [45.428902157836376, -75.6758915515518],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4A90E2", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3377be5f37b91da17c84a61aaa00bae6);
+        
+    
+        var popup_f3addf4857f4d47b500ba0813f461da4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ada760007c2dee7f9a01700386a4fda2 = $(`<div id="html_ada760007c2dee7f9a01700386a4fda2" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Strathcona / River area</b><br><span style="color:#4A90E2">&#9679;</span> Transit & Biking<br><br>Scooter / [something] my [mind?]</div></div>`)[0];
+                popup_f3addf4857f4d47b500ba0813f461da4.setContent(html_ada760007c2dee7f9a01700386a4fda2);
+            
+        
+
+        circle_marker_01ab90e737c08ab6661c62e0dc8bd12d.bindPopup(popup_f3addf4857f4d47b500ba0813f461da4)
+        ;
+
+        
+    
+    
+            circle_marker_01ab90e737c08ab6661c62e0dc8bd12d.bindTooltip(
+                `<div>
+                     Strathcona / River area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_91f52a57a1396550f876c90b44caa140 = L.circleMarker(
+                [45.43491193920133, -75.65444619298333],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4A90E2", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3377be5f37b91da17c84a61aaa00bae6);
+        
+    
+        var popup_3bb3c880c89166a0481a73a63c43f7ae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b6ea5f3c7efdc52882b66046a3cd4c92 = $(`<div id="html_b6ea5f3c7efdc52882b66046a3cd4c92" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Ch. Montreal / Frontenac area</b><br><span style="color:#4A90E2">&#9679;</span> Transit & Biking<br><br>Ch. Montreal — Traffic Time</div></div>`)[0];
+                popup_3bb3c880c89166a0481a73a63c43f7ae.setContent(html_b6ea5f3c7efdc52882b66046a3cd4c92);
+            
+        
+
+        circle_marker_91f52a57a1396550f876c90b44caa140.bindPopup(popup_3bb3c880c89166a0481a73a63c43f7ae)
+        ;
+
+        
+    
+    
+            circle_marker_91f52a57a1396550f876c90b44caa140.bindTooltip(
+                `<div>
+                     Ch. Montreal / Frontenac area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_90ae0e21706467e03ae3d4c2b0475f70 = L.circleMarker(
+                [45.4409006, -75.6629184],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4A90E2", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3377be5f37b91da17c84a61aaa00bae6);
+        
+    
+        var popup_491d8834e469650c394ab09a09983472 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6b0f5529cdaed3696852e340ce3a7904 = $(`<div id="html_6b0f5529cdaed3696852e340ce3a7904" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Near Vanier general</b><br><span style="color:#4A90E2">&#9679;</span> Transit & Biking<br><br>No LRT anywhere near Vanier</div></div>`)[0];
+                popup_491d8834e469650c394ab09a09983472.setContent(html_6b0f5529cdaed3696852e340ce3a7904);
+            
+        
+
+        circle_marker_90ae0e21706467e03ae3d4c2b0475f70.bindPopup(popup_491d8834e469650c394ab09a09983472)
+        ;
+
+        
+    
+    
+            circle_marker_90ae0e21706467e03ae3d4c2b0475f70.bindTooltip(
+                `<div>
+                     Near Vanier general
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3aee38e602d04559b1cabd91167a3e0 = L.circleMarker(
+                [45.43555185783638, -75.6725780259603],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4A90E2", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3377be5f37b91da17c84a61aaa00bae6);
+        
+    
+        var popup_aa4edc5a3ce4b67658789101564870d0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_46191db01a25066fb8010fb76f220cbd = $(`<div id="html_46191db01a25066fb8010fb76f220cbd" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Tudor Pl area</b><br><span style="color:#4A90E2">&#9679;</span> Transit & Biking<br><br>Can use new bike commissions</div></div>`)[0];
+                popup_aa4edc5a3ce4b67658789101564870d0.setContent(html_46191db01a25066fb8010fb76f220cbd);
+            
+        
+
+        circle_marker_f3aee38e602d04559b1cabd91167a3e0.bindPopup(popup_aa4edc5a3ce4b67658789101564870d0)
+        ;
+
+        
+    
+    
+            circle_marker_f3aee38e602d04559b1cabd91167a3e0.bindTooltip(
+                `<div>
+                     Tudor Pl area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6fc6d9ee3045a4b4b28ca09fff528264 = L.circleMarker(
+                [45.440602417603984, -75.66153584609476],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4A90E2", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_3377be5f37b91da17c84a61aaa00bae6);
+        
+    
+        var popup_94da499100d536e54e260293b7313b0d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae69b6bdd2f68c4aacf692ab5af5c506 = $(`<div id="html_ae69b6bdd2f68c4aacf692ab5af5c506" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Vanier general</b><br><span style="color:#4A90E2">&#9679;</span> Transit & Biking<br><br>Poor bus service - clearing - New York [unclear]</div></div>`)[0];
+                popup_94da499100d536e54e260293b7313b0d.setContent(html_ae69b6bdd2f68c4aacf692ab5af5c506);
+            
+        
+
+        circle_marker_6fc6d9ee3045a4b4b28ca09fff528264.bindPopup(popup_94da499100d536e54e260293b7313b0d)
+        ;
+
+        
+    
+    
+            circle_marker_6fc6d9ee3045a4b4b28ca09fff528264.bindTooltip(
+                `<div>
+                     Vanier general
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_3377be5f37b91da17c84a61aaa00bae6.addTo(map_bd49dfd5fb6d2dfb73eec6cdf3a1bff5);
+        
+    
+            var feature_group_eb155ceb0e0eed502418bc744eb13401 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_83fcd48dcd659a4a49a5b30297807870 = L.circleMarker(
+                [45.4421984, -75.6718456],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6DBFA9", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_eb155ceb0e0eed502418bc744eb13401);
+        
+    
+        var popup_aa8f80fbe0afb98f492f364bda9b6f40 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_23aaed5cae88a6fca2f3acccbef6ffa3 = $(`<div id="html_23aaed5cae88a6fca2f3acccbef6ffa3" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Genest / Montreal Rd area</b><br><span style="color:#6DBFA9">&#9679;</span> Accessibility<br><br>No public [fountain?] during Montreal Rd construction but [toilet?]</div></div>`)[0];
+                popup_aa8f80fbe0afb98f492f364bda9b6f40.setContent(html_23aaed5cae88a6fca2f3acccbef6ffa3);
+            
+        
+
+        circle_marker_83fcd48dcd659a4a49a5b30297807870.bindPopup(popup_aa8f80fbe0afb98f492f364bda9b6f40)
+        ;
+
+        
+    
+    
+            circle_marker_83fcd48dcd659a4a49a5b30297807870.bindTooltip(
+                `<div>
+                     Genest / Montreal Rd area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_338e78f0bd701a7a511ee454debdff77 = L.circleMarker(
+                [45.441167, -75.669562],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6DBFA9", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_eb155ceb0e0eed502418bc744eb13401);
+        
+    
+        var popup_57cea1a1d4100ebe6cd179f20f8861db = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a209eded00473fe9937aca3a25390a1b = $(`<div id="html_a209eded00473fe9937aca3a25390a1b" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Genest / Alice area</b><br><span style="color:#6DBFA9">&#9679;</span> Accessibility<br><br>Broke wrist helping someone else who fell on ice</div></div>`)[0];
+                popup_57cea1a1d4100ebe6cd179f20f8861db.setContent(html_a209eded00473fe9937aca3a25390a1b);
+            
+        
+
+        circle_marker_338e78f0bd701a7a511ee454debdff77.bindPopup(popup_57cea1a1d4100ebe6cd179f20f8861db)
+        ;
+
+        
+    
+    
+            circle_marker_338e78f0bd701a7a511ee454debdff77.bindTooltip(
+                `<div>
+                     Genest / Alice area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9016b9b6f2a39fddad2fb0accc2a1387 = L.circleMarker(
+                [45.440523957836376, -75.66310929085941],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6DBFA9", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_eb155ceb0e0eed502418bc744eb13401);
+        
+    
+        var popup_b0b9e29a58be8afa1fcf1698b812553d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a5271dee3d904fdad980a2f633d6c428 = $(`<div id="html_a5271dee3d904fdad980a2f633d6c428" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Vanier general</b><br><span style="color:#6DBFA9">&#9679;</span> Accessibility<br><br>Not the snow but the amount of ice, especially dangerous for seniors. Sidewalks are not a priority, people needing to walk on roads</div></div>`)[0];
+                popup_b0b9e29a58be8afa1fcf1698b812553d.setContent(html_a5271dee3d904fdad980a2f633d6c428);
+            
+        
+
+        circle_marker_9016b9b6f2a39fddad2fb0accc2a1387.bindPopup(popup_b0b9e29a58be8afa1fcf1698b812553d)
+        ;
+
+        
+    
+    
+            circle_marker_9016b9b6f2a39fddad2fb0accc2a1387.bindTooltip(
+                `<div>
+                     Vanier general
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e95ec1cc1f73289882f70dd55561d029 = L.circleMarker(
+                [45.43987724216362, -75.66272750914058],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6DBFA9", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_eb155ceb0e0eed502418bc744eb13401);
+        
+    
+        var popup_992874233dc2329c37fe4713c912ea04 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1c7262a4340ad902d1ede9e821ad1e3a = $(`<div id="html_1c7262a4340ad902d1ede9e821ad1e3a" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Vanier general</b><br><span style="color:#6DBFA9">&#9679;</span> Accessibility<br><br>Poor handling of wheelchairs</div></div>`)[0];
+                popup_992874233dc2329c37fe4713c912ea04.setContent(html_1c7262a4340ad902d1ede9e821ad1e3a);
+            
+        
+
+        circle_marker_e95ec1cc1f73289882f70dd55561d029.bindPopup(popup_992874233dc2329c37fe4713c912ea04)
+        ;
+
+        
+    
+    
+            circle_marker_e95ec1cc1f73289882f70dd55561d029.bindTooltip(
+                `<div>
+                     Vanier general
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9b1ca87b0faedb53b9910979a6fc6dd9 = L.circleMarker(
+                [45.440695574746826, -75.66362384063184],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6DBFA9", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_eb155ceb0e0eed502418bc744eb13401);
+        
+    
+        var popup_5cd06979cab854388c7dfad3b9d1b26b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4b2ee1c84dd9565d6cf5044e9e2ea299 = $(`<div id="html_4b2ee1c84dd9565d6cf5044e9e2ea299" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Vanier general</b><br><span style="color:#6DBFA9">&#9679;</span> Accessibility<br><br>AC in community room now, but not in buildings</div></div>`)[0];
+                popup_5cd06979cab854388c7dfad3b9d1b26b.setContent(html_4b2ee1c84dd9565d6cf5044e9e2ea299);
+            
+        
+
+        circle_marker_9b1ca87b0faedb53b9910979a6fc6dd9.bindPopup(popup_5cd06979cab854388c7dfad3b9d1b26b)
+        ;
+
+        
+    
+    
+            circle_marker_9b1ca87b0faedb53b9910979a6fc6dd9.bindTooltip(
+                `<div>
+                     Vanier general
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_992f61cdfdec8af97d5a42204c0cae9f = L.circleMarker(
+                [45.446102439201326, -75.64147810157932],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6DBFA9", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_eb155ceb0e0eed502418bc744eb13401);
+        
+    
+        var popup_102138a44cf4f5415951db47c7a6c0b8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d25c9e34bbfbfe66299b874924bfa94d = $(`<div id="html_d25c9e34bbfbfe66299b874924bfa94d" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Hopital Montfort</b><br><span style="color:#6DBFA9">&#9679;</span> Accessibility<br><br>Hopital Montfort - long wait times for appointments and to see family doctors (French)</div></div>`)[0];
+                popup_102138a44cf4f5415951db47c7a6c0b8.setContent(html_d25c9e34bbfbfe66299b874924bfa94d);
+            
+        
+
+        circle_marker_992f61cdfdec8af97d5a42204c0cae9f.bindPopup(popup_102138a44cf4f5415951db47c7a6c0b8)
+        ;
+
+        
+    
+    
+            circle_marker_992f61cdfdec8af97d5a42204c0cae9f.bindTooltip(
+                `<div>
+                     Hopital Montfort
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa7945a482f88adbe090fca1c1a98b8a = L.circleMarker(
+                [45.44629185783638, -75.64174808962328],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6DBFA9", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_eb155ceb0e0eed502418bc744eb13401);
+        
+    
+        var popup_bb0e525b71e2140de7b2c8730bdc6f4f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_be1962d9284d9157464742056b611209 = $(`<div id="html_be1962d9284d9157464742056b611209" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Near Hopital Montfort</b><br><span style="color:#6DBFA9">&#9679;</span> Accessibility<br><br>[unclear] community housing - high need</div></div>`)[0];
+                popup_bb0e525b71e2140de7b2c8730bdc6f4f.setContent(html_be1962d9284d9157464742056b611209);
+            
+        
+
+        circle_marker_aa7945a482f88adbe090fca1c1a98b8a.bindPopup(popup_bb0e525b71e2140de7b2c8730bdc6f4f)
+        ;
+
+        
+    
+    
+            circle_marker_aa7945a482f88adbe090fca1c1a98b8a.bindTooltip(
+                `<div>
+                     Near Hopital Montfort
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c6f691421fe160b9de7db516e29961c = L.circleMarker(
+                [45.4318689, -75.6107833],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6DBFA9", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_eb155ceb0e0eed502418bc744eb13401);
+        
+    
+        var popup_833e703050d907c6ed2f4e8fbf0d6e27 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a0f27223aef6d9d40da55ec09a6f98f7 = $(`<div id="html_a0f27223aef6d9d40da55ec09a6f98f7" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Blair Station area</b><br><span style="color:#6DBFA9">&#9679;</span> Accessibility<br><br>Blair Station not accessible with stroller/wheelchair</div></div>`)[0];
+                popup_833e703050d907c6ed2f4e8fbf0d6e27.setContent(html_a0f27223aef6d9d40da55ec09a6f98f7);
+            
+        
+
+        circle_marker_1c6f691421fe160b9de7db516e29961c.bindPopup(popup_833e703050d907c6ed2f4e8fbf0d6e27)
+        ;
+
+        
+    
+    
+            circle_marker_1c6f691421fe160b9de7db516e29961c.bindTooltip(
+                `<div>
+                     Blair Station area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_eb155ceb0e0eed502418bc744eb13401.addTo(map_bd49dfd5fb6d2dfb73eec6cdf3a1bff5);
+        
+    
+            var feature_group_4c73c20ca2c9c7105f2e1d6a57495ef9 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_76e64a2e6c723b2d44d673584d8403bc = L.circleMarker(
+                [45.43589813920133, -75.68053148493021],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D93025", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4c73c20ca2c9c7105f2e1d6a57495ef9);
+        
+    
+        var popup_b54aa5d195254222c7b438f7d21008f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4d8cdc2fcb6cea619bbdaf7319cd58d7 = $(`<div id="html_4d8cdc2fcb6cea619bbdaf7319cd58d7" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>LCBO / Vanier Pkwy area</b><br><span style="color:#D93025">&#9679;</span> Safety Concern<br><br>Liquor store encampment — completely avoid</div></div>`)[0];
+                popup_b54aa5d195254222c7b438f7d21008f4.setContent(html_4d8cdc2fcb6cea619bbdaf7319cd58d7);
+            
+        
+
+        circle_marker_76e64a2e6c723b2d44d673584d8403bc.bindPopup(popup_b54aa5d195254222c7b438f7d21008f4)
+        ;
+
+        
+    
+    
+            circle_marker_76e64a2e6c723b2d44d673584d8403bc.bindTooltip(
+                `<div>
+                     LCBO / Vanier Pkwy area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_38c8dcc93421fb45f377ad775b9de16b = L.circleMarker(
+                [45.43608755783638, -75.68080142414834],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D93025", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4c73c20ca2c9c7105f2e1d6a57495ef9);
+        
+    
+        var popup_b17d28b97f0a1bc5f7cadfaf039cbf2c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_89558e3c493b81c4499504545edf8057 = $(`<div id="html_89558e3c493b81c4499504545edf8057" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Hannah / Cody LCBO area</b><br><span style="color:#D93025">&#9679;</span> Safety Concern<br><br>LCBO — badly maintained</div></div>`)[0];
+                popup_b17d28b97f0a1bc5f7cadfaf039cbf2c.setContent(html_89558e3c493b81c4499504545edf8057);
+            
+        
+
+        circle_marker_38c8dcc93421fb45f377ad775b9de16b.bindPopup(popup_b17d28b97f0a1bc5f7cadfaf039cbf2c)
+        ;
+
+        
+    
+    
+            circle_marker_38c8dcc93421fb45f377ad775b9de16b.bindTooltip(
+                `<div>
+                     Hannah / Cody LCBO area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7435723efcc1d9b1de60f6c2d0ba2752 = L.circleMarker(
+                [45.43608755783638, -75.68118317585166],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D93025", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4c73c20ca2c9c7105f2e1d6a57495ef9);
+        
+    
+        var popup_15781e83d7a6b4085b471f6fe47a1403 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2631c7a06d894060e9922095e6b91818 = $(`<div id="html_2631c7a06d894060e9922095e6b91818" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Hannah / Cody LCBO area</b><br><span style="color:#D93025">&#9679;</span> Safety Concern<br><br>Encampment outside LCBO</div></div>`)[0];
+                popup_15781e83d7a6b4085b471f6fe47a1403.setContent(html_2631c7a06d894060e9922095e6b91818);
+            
+        
+
+        circle_marker_7435723efcc1d9b1de60f6c2d0ba2752.bindPopup(popup_15781e83d7a6b4085b471f6fe47a1403)
+        ;
+
+        
+    
+    
+            circle_marker_7435723efcc1d9b1de60f6c2d0ba2752.bindTooltip(
+                `<div>
+                     Hannah / Cody LCBO area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6445e309f7671dc18780fccda92a1076 = L.circleMarker(
+                [45.439660939201325, -75.66315005420007],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D93025", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4c73c20ca2c9c7105f2e1d6a57495ef9);
+        
+    
+        var popup_45fd2927b2e3046851047c4cd22be4e2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e4612ea8ce2de6604e081c23bd95ba6f = $(`<div id="html_e4612ea8ce2de6604e081c23bd95ba6f" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Bradley Ave area</b><br><span style="color:#D93025">&#9679;</span> Safety Concern<br><br>Mtl Rd (Montreal Road) — other people — [unclear] — lights</div></div>`)[0];
+                popup_45fd2927b2e3046851047c4cd22be4e2.setContent(html_e4612ea8ce2de6604e081c23bd95ba6f);
+            
+        
+
+        circle_marker_6445e309f7671dc18780fccda92a1076.bindPopup(popup_45fd2927b2e3046851047c4cd22be4e2)
+        ;
+
+        
+    
+    
+            circle_marker_6445e309f7671dc18780fccda92a1076.bindTooltip(
+                `<div>
+                     Bradley Ave area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1764d389da4f20d2987321171e7ecdb9 = L.circleMarker(
+                [45.43812, -75.6593181],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D93025", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4c73c20ca2c9c7105f2e1d6a57495ef9);
+        
+    
+        var popup_ee3a2258581393f1569f7be79489689d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a5be0f7ade049a7aef19b2e827ec7a2 = $(`<div id="html_7a5be0f7ade049a7aef19b2e827ec7a2" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Montreal Rd / Janeville area</b><br><span style="color:#D93025">&#9679;</span> Safety Concern<br><br>339 Montreal Rd — Myra-Shelter — Worried</div></div>`)[0];
+                popup_ee3a2258581393f1569f7be79489689d.setContent(html_7a5be0f7ade049a7aef19b2e827ec7a2);
+            
+        
+
+        circle_marker_1764d389da4f20d2987321171e7ecdb9.bindPopup(popup_ee3a2258581393f1569f7be79489689d)
+        ;
+
+        
+    
+    
+            circle_marker_1764d389da4f20d2987321171e7ecdb9.bindTooltip(
+                `<div>
+                     Montreal Rd / Janeville area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f2d61f996c1ebf7c1dbc029b49e38110 = L.circleMarker(
+                [45.43985035783638, -75.66380178858049],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D93025", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4c73c20ca2c9c7105f2e1d6a57495ef9);
+        
+    
+        var popup_194ec9972d9dca9b9f113775bc8622f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f134511943c07e3bc6c14b9e0f52b9bb = $(`<div id="html_f134511943c07e3bc6c14b9e0f52b9bb" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Bradley Ave area</b><br><span style="color:#D93025">&#9679;</span> Safety Concern<br><br>[Increase / Community...] — genuinely illegible</div></div>`)[0];
+                popup_194ec9972d9dca9b9f113775bc8622f4.setContent(html_f134511943c07e3bc6c14b9e0f52b9bb);
+            
+        
+
+        circle_marker_f2d61f996c1ebf7c1dbc029b49e38110.bindPopup(popup_194ec9972d9dca9b9f113775bc8622f4)
+        ;
+
+        
+    
+    
+            circle_marker_f2d61f996c1ebf7c1dbc029b49e38110.bindTooltip(
+                `<div>
+                     Bradley Ave area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_55fa81d153f0340900556b790949f54d = L.circleMarker(
+                [45.441242, -75.6660899],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D93025", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4c73c20ca2c9c7105f2e1d6a57495ef9);
+        
+    
+        var popup_a7f4ad1ffb33b7ae855b5bab9faa2758 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0b30907f073762118f0d1057437257ed = $(`<div id="html_0b30907f073762118f0d1057437257ed" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>St-Jacques / St-Denis area</b><br><span style="color:#D93025">&#9679;</span> Safety Concern<br><br>Mtl Rd — mega-shelter — negative impact on community</div></div>`)[0];
+                popup_a7f4ad1ffb33b7ae855b5bab9faa2758.setContent(html_0b30907f073762118f0d1057437257ed);
+            
+        
+
+        circle_marker_55fa81d153f0340900556b790949f54d.bindPopup(popup_a7f4ad1ffb33b7ae855b5bab9faa2758)
+        ;
+
+        
+    
+    
+            circle_marker_55fa81d153f0340900556b790949f54d.bindTooltip(
+                `<div>
+                     St-Jacques / St-Denis area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9864dd1d692d5ec0664fcaceea5a7525 = L.circleMarker(
+                [45.43589813920133, -75.68145311506979],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D93025", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4c73c20ca2c9c7105f2e1d6a57495ef9);
+        
+    
+        var popup_9f245c1337c4593fdc625cc585fbaff7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9d66ac7ec212f8c0dbd497a3d3087703 = $(`<div id="html_9d66ac7ec212f8c0dbd497a3d3087703" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>LCBO area</b><br><span style="color:#D93025">&#9679;</span> Safety Concern<br><br>Encampment visible - LCBO</div></div>`)[0];
+                popup_9f245c1337c4593fdc625cc585fbaff7.setContent(html_9d66ac7ec212f8c0dbd497a3d3087703);
+            
+        
+
+        circle_marker_9864dd1d692d5ec0664fcaceea5a7525.bindPopup(popup_9f245c1337c4593fdc625cc585fbaff7)
+        ;
+
+        
+    
+    
+            circle_marker_9864dd1d692d5ec0664fcaceea5a7525.bindTooltip(
+                `<div>
+                     LCBO area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_4f671ecb4278b47ea70e58b8d6dc0629 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_aab614595077fc0c72ed07e03d709700 = L.circleMarker(
+                [45.444969150873604, -75.66262948965776],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F5C518", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4f671ecb4278b47ea70e58b8d6dc0629);
+        
+    
+        var popup_fb98d5878ef483ba6a78d91ee927720b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e59985d706b9e9d2bc5e2e17c96ceb79 = $(`<div id="html_e59985d706b9e9d2bc5e2e17c96ceb79" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Library area</b><br><span style="color:#F5C518">&#9679;</span> Third Spaces<br><br>Library — bring [something]</div></div>`)[0];
+                popup_fb98d5878ef483ba6a78d91ee927720b.setContent(html_e59985d706b9e9d2bc5e2e17c96ceb79);
+            
+        
+
+        circle_marker_aab614595077fc0c72ed07e03d709700.bindPopup(popup_fb98d5878ef483ba6a78d91ee927720b)
+        ;
+
+        
+    
+    
+            circle_marker_aab614595077fc0c72ed07e03d709700.bindTooltip(
+                `<div>
+                     Library area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4e03ef4198c80a0c97dba22b5e69a1b7 = L.circleMarker(
+                [45.440106, -75.6569479],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F5C518", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4f671ecb4278b47ea70e58b8d6dc0629);
+        
+    
+        var popup_cde98e5b1a3fd3693d9f1b22b5020ef5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3bcd55d740907b294e945476fab9bfff = $(`<div id="html_3bcd55d740907b294e945476fab9bfff" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Library / Cantin area</b><br><span style="color:#F5C518">&#9679;</span> Third Spaces<br><br>Bibliothèque grotte!</div></div>`)[0];
+                popup_cde98e5b1a3fd3693d9f1b22b5020ef5.setContent(html_3bcd55d740907b294e945476fab9bfff);
+            
+        
+
+        circle_marker_4e03ef4198c80a0c97dba22b5e69a1b7.bindPopup(popup_cde98e5b1a3fd3693d9f1b22b5020ef5)
+        ;
+
+        
+    
+    
+            circle_marker_4e03ef4198c80a0c97dba22b5e69a1b7.bindTooltip(
+                `<div>
+                     Library / Cantin area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d7b5c29cb31ae80c7d538c22c14c7951 = L.circleMarker(
+                [45.43809, -75.6623749],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F5C518", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4f671ecb4278b47ea70e58b8d6dc0629);
+        
+    
+        var popup_17dfe0d22d17868a39b5ce83c571b312 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ddb7a877655bec66a5ea559212e71742 = $(`<div id="html_ddb7a877655bec66a5ea559212e71742" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Bradley Ave / Lalemant area</b><br><span style="color:#F5C518">&#9679;</span> Third Spaces<br><br>No young adult rec or life in this neighborhood</div></div>`)[0];
+                popup_17dfe0d22d17868a39b5ce83c571b312.setContent(html_ddb7a877655bec66a5ea559212e71742);
+            
+        
+
+        circle_marker_d7b5c29cb31ae80c7d538c22c14c7951.bindPopup(popup_17dfe0d22d17868a39b5ce83c571b312)
+        ;
+
+        
+    
+    
+            circle_marker_d7b5c29cb31ae80c7d538c22c14c7951.bindTooltip(
+                `<div>
+                     Bradley Ave / Lalemant area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_67dc8b97f537573337412784b7f3703d = L.circleMarker(
+                [45.440334539201324, -75.66245754869826],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F5C518", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4f671ecb4278b47ea70e58b8d6dc0629);
+        
+    
+        var popup_321214d5aadf92681fb042ef1faafc59 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_627aaec5437d5cf49b5dfe10295c8820 = $(`<div id="html_627aaec5437d5cf49b5dfe10295c8820" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Joffre-Belanger / Vanier general</b><br><span style="color:#F5C518">&#9679;</span> Third Spaces<br><br>[Pierre/Janeville?] Empire School buildings — near St-Denis</div></div>`)[0];
+                popup_321214d5aadf92681fb042ef1faafc59.setContent(html_627aaec5437d5cf49b5dfe10295c8820);
+            
+        
+
+        circle_marker_67dc8b97f537573337412784b7f3703d.bindPopup(popup_321214d5aadf92681fb042ef1faafc59)
+        ;
+
+        
+    
+    
+            circle_marker_67dc8b97f537573337412784b7f3703d.bindTooltip(
+                `<div>
+                     Joffre-Belanger / Vanier general
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_737e6053b6eda5e60a1934f4000ed2f3 = L.circleMarker(
+                [45.4278064, -75.6656645],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F5C518", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4f671ecb4278b47ea70e58b8d6dc0629);
+        
+    
+        var popup_89e65ef57e5b9dfcce70fe52d5d3587a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05f69b6d350363fdc423f2c449b13811 = $(`<div id="html_05f69b6d350363fdc423f2c449b13811" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Vanier Pkwy / river area</b><br><span style="color:#F5C518">&#9679;</span> Third Spaces<br><br>young schools / 3 [schools] / worried / [about?]</div></div>`)[0];
+                popup_89e65ef57e5b9dfcce70fe52d5d3587a.setContent(html_05f69b6d350363fdc423f2c449b13811);
+            
+        
+
+        circle_marker_737e6053b6eda5e60a1934f4000ed2f3.bindPopup(popup_89e65ef57e5b9dfcce70fe52d5d3587a)
+        ;
+
+        
+    
+    
+            circle_marker_737e6053b6eda5e60a1934f4000ed2f3.bindTooltip(
+                `<div>
+                     Vanier Pkwy / river area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d41889d64337fa1058ca8a649f4fab6d = L.circleMarker(
+                [45.43969925783638, -75.6707432880693],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F5C518", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4f671ecb4278b47ea70e58b8d6dc0629);
+        
+    
+        var popup_159d7f65adc0bce60f3e9c737eb1ddb7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b8b4f5dd6a684201a97f80c5008350dd = $(`<div id="html_b8b4f5dd6a684201a97f80c5008350dd" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Increase community [something]</b><br><span style="color:#F5C518">&#9679;</span> Third Spaces<br><br>[Increase / Community zoom shop? / Bring great destination]</div></div>`)[0];
+                popup_159d7f65adc0bce60f3e9c737eb1ddb7.setContent(html_b8b4f5dd6a684201a97f80c5008350dd);
+            
+        
+
+        circle_marker_d41889d64337fa1058ca8a649f4fab6d.bindPopup(popup_159d7f65adc0bce60f3e9c737eb1ddb7)
+        ;
+
+        
+    
+    
+            circle_marker_d41889d64337fa1058ca8a649f4fab6d.bindTooltip(
+                `<div>
+                     Increase community [something]
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eb1c3078170ce566a99df4de985dd276 = L.circleMarker(
+                [45.43970562525317, -75.66362384063184],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F5C518", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_4f671ecb4278b47ea70e58b8d6dc0629);
+        
+    
+        var popup_7505ac5d0095582771b362df5ee09bd5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6db6f092346dd285617de7435eb6d65b = $(`<div id="html_6db6f092346dd285617de7435eb6d65b" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Joffre-Belanger area</b><br><span style="color:#F5C518">&#9679;</span> Third Spaces<br><br>Anina&#x27;s Cafe - community building space</div></div>`)[0];
+                popup_7505ac5d0095582771b362df5ee09bd5.setContent(html_6db6f092346dd285617de7435eb6d65b);
+            
+        
+
+        circle_marker_eb1c3078170ce566a99df4de985dd276.bindPopup(popup_7505ac5d0095582771b362df5ee09bd5)
+        ;
+
+        
+    
+    
+            circle_marker_eb1c3078170ce566a99df4de985dd276.bindTooltip(
+                `<div>
+                     Joffre-Belanger area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_9cc24b86c785f9313be5e7362cde82cd = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_c4a13d33f2201adce938318a6cb7e5fe = L.circleMarker(
+                [45.43071493920132, -75.66846822725056],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D94FC8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9cc24b86c785f9313be5e7362cde82cd);
+        
+    
+        var popup_0a31f47fb785321446a74f4c8951e97b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_18daf8676fc6061025902d5c1bf7b209 = $(`<div id="html_18daf8676fc6061025902d5c1bf7b209" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>North River Road Parkette</b><br><span style="color:#D94FC8">&#9679;</span> Connection<br><br>Rotisserie Macartheer Ave — reminds me of Costa Rica / El Salvador</div></div>`)[0];
+                popup_0a31f47fb785321446a74f4c8951e97b.setContent(html_18daf8676fc6061025902d5c1bf7b209);
+            
+        
+
+        circle_marker_c4a13d33f2201adce938318a6cb7e5fe.bindPopup(popup_0a31f47fb785321446a74f4c8951e97b)
+        ;
+
+        
+    
+    
+            circle_marker_c4a13d33f2201adce938318a6cb7e5fe.bindTooltip(
+                `<div>
+                     North River Road Parkette
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa5c9899c08373e5cddff254eb7ff007 = L.circleMarker(
+                [45.430904357836376, -75.669119858322],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D94FC8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9cc24b86c785f9313be5e7362cde82cd);
+        
+    
+        var popup_b41cbfc251c8e645a85c65f23f41bd90 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c29c8bb2b49e1b1b85e6165aa5c8d8a7 = $(`<div id="html_c29c8bb2b49e1b1b85e6165aa5c8d8a7" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>North River Road Parkette</b><br><span style="color:#D94FC8">&#9679;</span> Connection<br><br>Royal Canadian Legion — 2 projects for equity — community HS — do it yourself solution</div></div>`)[0];
+                popup_b41cbfc251c8e645a85c65f23f41bd90.setContent(html_c29c8bb2b49e1b1b85e6165aa5c8d8a7);
+            
+        
+
+        circle_marker_aa5c9899c08373e5cddff254eb7ff007.bindPopup(popup_b41cbfc251c8e645a85c65f23f41bd90)
+        ;
+
+        
+    
+    
+            circle_marker_aa5c9899c08373e5cddff254eb7ff007.bindTooltip(
+                `<div>
+                     North River Road Parkette
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a650f015fc10dbb54eebc72e3465aaa1 = L.circleMarker(
+                [45.4310819, -75.6665157],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D94FC8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9cc24b86c785f9313be5e7362cde82cd);
+        
+    
+        var popup_439b20358f45390e85a76b1917a83233 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_96bb71a7d67feb3ad0360897c3a766a7 = $(`<div id="html_96bb71a7d67feb3ad0360897c3a766a7" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>McArthur / Montreal Rd</b><br><span style="color:#D94FC8">&#9679;</span> Connection<br><br>Montreal Rd &amp; McArthur — example of progress / success of revitalization</div></div>`)[0];
+                popup_439b20358f45390e85a76b1917a83233.setContent(html_96bb71a7d67feb3ad0360897c3a766a7);
+            
+        
+
+        circle_marker_a650f015fc10dbb54eebc72e3465aaa1.bindPopup(popup_439b20358f45390e85a76b1917a83233)
+        ;
+
+        
+    
+    
+            circle_marker_a650f015fc10dbb54eebc72e3465aaa1.bindTooltip(
+                `<div>
+                     McArthur / Montreal Rd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_69f52c039681ae233772ed12a4c9a048 = L.circleMarker(
+                [45.440578, -75.6681479],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D94FC8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9cc24b86c785f9313be5e7362cde82cd);
+        
+    
+        var popup_f3c4d8382061e73618b864fc241ddd63 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a1f729599c17edef600c9b8a7c07eb4a = $(`<div id="html_a1f729599c17edef600c9b8a7c07eb4a" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>St-Denis / Shakespeare area</b><br><span style="color:#D94FC8">&#9679;</span> Connection<br><br>Ireland &amp; Ballymena</div></div>`)[0];
+                popup_f3c4d8382061e73618b864fc241ddd63.setContent(html_a1f729599c17edef600c9b8a7c07eb4a);
+            
+        
+
+        circle_marker_69f52c039681ae233772ed12a4c9a048.bindPopup(popup_f3c4d8382061e73618b864fc241ddd63)
+        ;
+
+        
+    
+    
+            circle_marker_69f52c039681ae233772ed12a4c9a048.bindTooltip(
+                `<div>
+                     St-Denis / Shakespeare area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b0011541472dcf0d6abfa78fe7878af9 = L.circleMarker(
+                [45.4402006, -75.661920756291],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D94FC8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9cc24b86c785f9313be5e7362cde82cd);
+        
+    
+        var popup_9d62eb22555ff8f426c9ac6767e55131 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9d909656458e68fddf3026aa41f24473 = $(`<div id="html_9d909656458e68fddf3026aa41f24473" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Vanier general</b><br><span style="color:#D94FC8">&#9679;</span> Connection<br><br>[Something about] immigrants, especially French speaking</div></div>`)[0];
+                popup_9d62eb22555ff8f426c9ac6767e55131.setContent(html_9d909656458e68fddf3026aa41f24473);
+            
+        
+
+        circle_marker_b0011541472dcf0d6abfa78fe7878af9.bindPopup(popup_9d62eb22555ff8f426c9ac6767e55131)
+        ;
+
+        
+    
+    
+            circle_marker_b0011541472dcf0d6abfa78fe7878af9.bindTooltip(
+                `<div>
+                     Vanier general
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_02dec28b3ffbfeaffbc23b891bfa475a = L.circleMarker(
+                [45.4409264, -75.661547],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D94FC8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9cc24b86c785f9313be5e7362cde82cd);
+        
+    
+        var popup_3d681e0d5ca120ea54c4d865f92d6ee0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_60e7ee322305e8a72b7ad859225a96ac = $(`<div id="html_60e7ee322305e8a72b7ad859225a96ac" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>St-Denis St area</b><br><span style="color:#D94FC8">&#9679;</span> Connection<br><br>Care / old age home — [unclear: charming or closing of?] / pack / residence</div></div>`)[0];
+                popup_3d681e0d5ca120ea54c4d865f92d6ee0.setContent(html_60e7ee322305e8a72b7ad859225a96ac);
+            
+        
+
+        circle_marker_02dec28b3ffbfeaffbc23b891bfa475a.bindPopup(popup_3d681e0d5ca120ea54c4d865f92d6ee0)
+        ;
+
+        
+    
+    
+            circle_marker_02dec28b3ffbfeaffbc23b891bfa475a.bindTooltip(
+                `<div>
+                     St-Denis St area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0a9c8eedc9cdc8c6fe97b227888d19c9 = L.circleMarker(
+                [45.4265902, -75.6717829],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D94FC8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9cc24b86c785f9313be5e7362cde82cd);
+        
+    
+        var popup_67a61ea833cbf6f6b0e07b769c2fe19b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb59465d7b00d4fe952489165232998f = $(`<div id="html_bb59465d7b00d4fe952489165232998f" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Rideau River winter trail</b><br><span style="color:#D94FC8">&#9679;</span> Connection<br><br>Rideau winter trail has opened up so much, we see the same people and connect, leaving [community feeling]</div></div>`)[0];
+                popup_67a61ea833cbf6f6b0e07b769c2fe19b.setContent(html_bb59465d7b00d4fe952489165232998f);
+            
+        
+
+        circle_marker_0a9c8eedc9cdc8c6fe97b227888d19c9.bindPopup(popup_67a61ea833cbf6f6b0e07b769c2fe19b)
+        ;
+
+        
+    
+    
+            circle_marker_0a9c8eedc9cdc8c6fe97b227888d19c9.bindTooltip(
+                `<div>
+                     Rideau River winter trail
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_b508cb3f5a87659b1ba5d31ef9238a0a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_c5b36722f254fa2f36ed5c01ebbd0b40 = L.circleMarker(
+                [45.43985035783638, -75.6634200114195],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9E9E9E", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b508cb3f5a87659b1ba5d31ef9238a0a);
+        
+    
+        var popup_4324bca151d8869de8f429fa387ca7e4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ad9a9ffa3b0b615bb20c4c6533d11308 = $(`<div id="html_ad9a9ffa3b0b615bb20c4c6533d11308" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Bradley Ave / Park St area</b><br><span style="color:#9E9E9E">&#9679;</span> Other<br><br>Bridge — water current — calming/bathing (or boating)</div></div>`)[0];
+                popup_4324bca151d8869de8f429fa387ca7e4.setContent(html_ad9a9ffa3b0b615bb20c4c6533d11308);
+            
+        
+
+        circle_marker_c5b36722f254fa2f36ed5c01ebbd0b40.bindPopup(popup_4324bca151d8869de8f429fa387ca7e4)
+        ;
+
+        
+    
+    
+            circle_marker_c5b36722f254fa2f36ed5c01ebbd0b40.bindTooltip(
+                `<div>
+                     Bradley Ave / Park St area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d097f3feb7ccd69d3a82dcca6440471 = L.circleMarker(
+                [45.440695574746826, -75.66221295936815],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9E9E9E", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b508cb3f5a87659b1ba5d31ef9238a0a);
+        
+    
+        var popup_001d2acd10e59b7dbeb7cb3964473a5c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0f92e3c18df2cb212e9ca3b7ed777da0 = $(`<div id="html_0f92e3c18df2cb212e9ca3b7ed777da0" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Westboro comparison</b><br><span style="color:#9E9E9E">&#9679;</span> Other<br><br>Not in a food desert at least like Westboro</div></div>`)[0];
+                popup_001d2acd10e59b7dbeb7cb3964473a5c.setContent(html_0f92e3c18df2cb212e9ca3b7ed777da0);
+            
+        
+
+        circle_marker_3d097f3feb7ccd69d3a82dcca6440471.bindPopup(popup_001d2acd10e59b7dbeb7cb3964473a5c)
+        ;
+
+        
+    
+    
+            circle_marker_3d097f3feb7ccd69d3a82dcca6440471.bindTooltip(
+                `<div>
+                     Westboro comparison
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_38fae989faadba622c00c0931e15f26a = L.circleMarker(
+                [45.44690375783638, -75.63166028755239],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9E9E9E", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b508cb3f5a87659b1ba5d31ef9238a0a);
+        
+    
+        var popup_399d8f2129cd7180766a9f7221d16716 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e49afd472e66c3ef1b1f757c87b8c4c3 = $(`<div id="html_e49afd472e66c3ef1b1f757c87b8c4c3" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Montreal Rd / St Patrick area</b><br><span style="color:#9E9E9E">&#9679;</span> Other<br><br>Montreal Rd &amp; St. Patrick&#x27;s Ward — possibly two separate locations</div></div>`)[0];
+                popup_399d8f2129cd7180766a9f7221d16716.setContent(html_e49afd472e66c3ef1b1f757c87b8c4c3);
+            
+        
+
+        circle_marker_38fae989faadba622c00c0931e15f26a.bindPopup(popup_399d8f2129cd7180766a9f7221d16716)
+        ;
+
+        
+    
+    
+            circle_marker_38fae989faadba622c00c0931e15f26a.bindTooltip(
+                `<div>
+                     Montreal Rd / St Patrick area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_12b00aa1b603c44297448c1de57dc9ee = L.circleMarker(
+                [45.439500599999995, -75.6629184],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9E9E9E", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b508cb3f5a87659b1ba5d31ef9238a0a);
+        
+    
+        var popup_e3a623334f67c170d7b82f365950ac99 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2751d4dc8994cf881b5238644c7c51bf = $(`<div id="html_2751d4dc8994cf881b5238644c7c51bf" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Vanier general</b><br><span style="color:#9E9E9E">&#9679;</span> Other<br><br>Intensification/gentrification will have a huge impact on the neighbourhood</div></div>`)[0];
+                popup_e3a623334f67c170d7b82f365950ac99.setContent(html_2751d4dc8994cf881b5238644c7c51bf);
+            
+        
+
+        circle_marker_12b00aa1b603c44297448c1de57dc9ee.bindPopup(popup_e3a623334f67c170d7b82f365950ac99)
+        ;
+
+        
+    
+    
+            circle_marker_12b00aa1b603c44297448c1de57dc9ee.bindTooltip(
+                `<div>
+                     Vanier general
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_5ff840b2efb98e5e0b8a3dbcf90ecf7f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_588feca94c2d9c2115a520c92f60da2a = L.circleMarker(
+                [45.44671433920133, -75.63139029657978],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F28C28", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_5ff840b2efb98e5e0b8a3dbcf90ecf7f);
+        
+    
+        var popup_cad9418f16e6fed237441d0e3a80a9af = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a93b0c069612ee5d2dcfbd8edba68641 = $(`<div id="html_a93b0c069612ee5d2dcfbd8edba68641" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Montreal Rd commercial strip</b><br><span style="color:#F28C28">&#9679;</span> Climate Change<br><br>Hanging out in stores for relief from heat</div></div>`)[0];
+                popup_cad9418f16e6fed237441d0e3a80a9af.setContent(html_a93b0c069612ee5d2dcfbd8edba68641);
+            
+        
+
+        circle_marker_588feca94c2d9c2115a520c92f60da2a.bindPopup(popup_cad9418f16e6fed237441d0e3a80a9af)
+        ;
+
+        
+    
+    
+            circle_marker_588feca94c2d9c2115a520c92f60da2a.bindTooltip(
+                `<div>
+                     Montreal Rd commercial strip
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5c837b801fad00ee1083c65815f8c7bc = L.circleMarker(
+                [45.428902157836376, -75.67550984844819],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F28C28", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_5ff840b2efb98e5e0b8a3dbcf90ecf7f);
+        
+    
+        var popup_0822d27299b44be0cf1d33ff90a1ddf9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ca5553e953dee995af54c3dba8352521 = $(`<div id="html_ca5553e953dee995af54c3dba8352521" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Strathcona Park</b><br><span style="color:#F28C28">&#9679;</span> Climate Change<br><br>Smoke from forest fires</div></div>`)[0];
+                popup_0822d27299b44be0cf1d33ff90a1ddf9.setContent(html_ca5553e953dee995af54c3dba8352521);
+            
+        
+
+        circle_marker_5c837b801fad00ee1083c65815f8c7bc.bindPopup(popup_0822d27299b44be0cf1d33ff90a1ddf9)
+        ;
+
+        
+    
+    
+            circle_marker_5c837b801fad00ee1083c65815f8c7bc.bindTooltip(
+                `<div>
+                     Strathcona Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f5b02984e63971279313c57e05ced101 = L.circleMarker(
+                [45.440334539201324, -75.66337925130173],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F28C28", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_5ff840b2efb98e5e0b8a3dbcf90ecf7f);
+        
+    
+        var popup_27b6cf2e1db41fd57c0c0b38d7a1f2c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bbce561b93280e2ee14f8606e1b70ff4 = $(`<div id="html_bbce561b93280e2ee14f8606e1b70ff4" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Vanier general</b><br><span style="color:#F28C28">&#9679;</span> Climate Change<br><br>It&#x27;s hot in Ottawa</div></div>`)[0];
+                popup_27b6cf2e1db41fd57c0c0b38d7a1f2c5.setContent(html_bbce561b93280e2ee14f8606e1b70ff4);
+            
+        
+
+        circle_marker_f5b02984e63971279313c57e05ced101.bindPopup(popup_27b6cf2e1db41fd57c0c0b38d7a1f2c5)
+        ;
+
+        
+    
+    
+            circle_marker_f5b02984e63971279313c57e05ced101.bindTooltip(
+                `<div>
+                     Vanier general
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_27effa2e7c9ad270867c2cd3e21dbe70 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_0e4b6e89f916f03f0e992d03db2d00ec = L.circleMarker(
+                [45.4344382, -75.6667104],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8B5A2B", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_27effa2e7c9ad270867c2cd3e21dbe70);
+        
+    
+        var popup_dd76f4e897ec595ffd492817b98103d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_44b85483333bdc9f4a136fbf329eca92 = $(`<div id="html_44b85483333bdc9f4a136fbf329eca92" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Vanier Pkwy / Duroche</b><br><span style="color:#8B5A2B">&#9679;</span> Harm Reduction<br><br>Tim Horton after 6pm — people using substances</div></div>`)[0];
+                popup_dd76f4e897ec595ffd492817b98103d8.setContent(html_44b85483333bdc9f4a136fbf329eca92);
+            
+        
+
+        circle_marker_0e4b6e89f916f03f0e992d03db2d00ec.bindPopup(popup_dd76f4e897ec595ffd492817b98103d8)
+        ;
+
+        
+    
+    
+            circle_marker_0e4b6e89f916f03f0e992d03db2d00ec.bindTooltip(
+                `<div>
+                     Vanier Pkwy / Duroche
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ef229d2b02f835099bc72a74ce1de612 = L.circleMarker(
+                [45.4319368, -75.6691051],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8B5A2B", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_27effa2e7c9ad270867c2cd3e21dbe70);
+        
+    
+        var popup_5ef5fcbe0808e81f95be5e1e8723f689 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb0150199842efeccf87e035c7a5c741 = $(`<div id="html_eb0150199842efeccf87e035c7a5c741" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Selkirk St / Montgomery area</b><br><span style="color:#8B5A2B">&#9679;</span> Harm Reduction<br><br>High number of used needles &amp; pipes</div></div>`)[0];
+                popup_5ef5fcbe0808e81f95be5e1e8723f689.setContent(html_eb0150199842efeccf87e035c7a5c741);
+            
+        
+
+        circle_marker_ef229d2b02f835099bc72a74ce1de612.bindPopup(popup_5ef5fcbe0808e81f95be5e1e8723f689)
+        ;
+
+        
+    
+    
+            circle_marker_ef229d2b02f835099bc72a74ce1de612.bindTooltip(
+                `<div>
+                     Selkirk St / Montgomery area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_647d98e5c682150e7b141a2d63506f11 = L.circleMarker(
+                [45.43510135783638, -75.65471612748405],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8B5A2B", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_27effa2e7c9ad270867c2cd3e21dbe70);
+        
+    
+        var popup_34afad69b3c5a5a03fdce2b45579c251 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ebcab8641c8bad281793d17d0a28faa1 = $(`<div id="html_ebcab8641c8bad281793d17d0a28faa1" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Frontenac St / Janeville area</b><br><span style="color:#8B5A2B">&#9679;</span> Harm Reduction<br><br>Safer Supply — lack of care</div></div>`)[0];
+                popup_34afad69b3c5a5a03fdce2b45579c251.setContent(html_ebcab8641c8bad281793d17d0a28faa1);
+            
+        
+
+        circle_marker_647d98e5c682150e7b141a2d63506f11.bindPopup(popup_34afad69b3c5a5a03fdce2b45579c251)
+        ;
+
+        
+    
+    
+            circle_marker_647d98e5c682150e7b141a2d63506f11.bindTooltip(
+                `<div>
+                     Frontenac St / Janeville area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var feature_group_c7828b178af9e95fe30c116d0f6a91ce = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_d2d3b12708d57bd1396b22cc48e8bae5 = L.circleMarker(
+                [45.44377923693254, -75.65868590410454],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1F3FA8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c7828b178af9e95fe30c116d0f6a91ce);
+        
+    
+        var popup_30b24888e37fa75677cdaf3d1499e299 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b155348be1d7edef154057c018fe24fc = $(`<div id="html_b155348be1d7edef154057c018fe24fc" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Museum / Montfort area</b><br><span style="color:#1F3FA8">&#9679;</span> Peaceful<br><br>Museum — Peaceful</div></div>`)[0];
+                popup_30b24888e37fa75677cdaf3d1499e299.setContent(html_b155348be1d7edef154057c018fe24fc);
+            
+        
+
+        circle_marker_d2d3b12708d57bd1396b22cc48e8bae5.bindPopup(popup_30b24888e37fa75677cdaf3d1499e299)
+        ;
+
+        
+    
+    
+            circle_marker_d2d3b12708d57bd1396b22cc48e8bae5.bindTooltip(
+                `<div>
+                     Museum / Montfort area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a7945dd2ce8675c625c6f3c1b2897912 = L.circleMarker(
+                [45.4357642, -75.6656645],
+                {"bubblingMouseEvents": true, "color": "#222222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1F3FA8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 1}
+            ).addTo(feature_group_c7828b178af9e95fe30c116d0f6a91ce);
+        
+    
+        var popup_a4f0e700ee7d4d398c9d677e36400cfb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d266313ade91b68ab789c64ffc587b9 = $(`<div id="html_6d266313ade91b68ab789c64ffc587b9" style="width: 100.0%; height: 100.0%;"><div style="font-family:Arial,sans-serif;font-size:13px;line-height:1.4"><b>Vanier Pkwy / Greensway</b><br><span style="color:#1F3FA8">&#9679;</span> Peaceful<br><br>Being close to the water creates a sense of calm &amp; peace</div></div>`)[0];
+                popup_a4f0e700ee7d4d398c9d677e36400cfb.setContent(html_6d266313ade91b68ab789c64ffc587b9);
+            
+        
+
+        circle_marker_a7945dd2ce8675c625c6f3c1b2897912.bindPopup(popup_a4f0e700ee7d4d398c9d677e36400cfb)
+        ;
+
+        
+    
+    
+            circle_marker_a7945dd2ce8675c625c6f3c1b2897912.bindTooltip(
+                `<div>
+                     Vanier Pkwy / Greensway
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var layer_control_f3906f630cc1fc3afe79c75fe188b1af_layers = {
+                base_layers : {
+                },
+                overlays :  {
+                    "\u003cspan style=\"color:#5BBF3A;font-size:16px\"\u003e\u0026#9679;\u003c/span\u003e Greenspaces (17)" : feature_group_c0bb2c3f3bc26d857730c1c98960b7cc,
+                    "\u003cspan style=\"color:#4A90E2;font-size:16px\"\u003e\u0026#9679;\u003c/span\u003e Transit \u0026 Biking (11)" : feature_group_3377be5f37b91da17c84a61aaa00bae6,
+                    "\u003cspan style=\"color:#6DBFA9;font-size:16px\"\u003e\u0026#9679;\u003c/span\u003e Accessibility (8)" : feature_group_eb155ceb0e0eed502418bc744eb13401,
+                    "\u003cspan style=\"color:#D93025;font-size:16px\"\u003e\u0026#9679;\u003c/span\u003e Safety Concern (8)" : feature_group_4c73c20ca2c9c7105f2e1d6a57495ef9,
+                    "\u003cspan style=\"color:#F5C518;font-size:16px\"\u003e\u0026#9679;\u003c/span\u003e Third Spaces (7)" : feature_group_4f671ecb4278b47ea70e58b8d6dc0629,
+                    "\u003cspan style=\"color:#D94FC8;font-size:16px\"\u003e\u0026#9679;\u003c/span\u003e Connection (7)" : feature_group_9cc24b86c785f9313be5e7362cde82cd,
+                    "\u003cspan style=\"color:#9E9E9E;font-size:16px\"\u003e\u0026#9679;\u003c/span\u003e Other (4)" : feature_group_b508cb3f5a87659b1ba5d31ef9238a0a,
+                    "\u003cspan style=\"color:#F28C28;font-size:16px\"\u003e\u0026#9679;\u003c/span\u003e Climate Change (3)" : feature_group_5ff840b2efb98e5e0b8a3dbcf90ecf7f,
+                    "\u003cspan style=\"color:#8B5A2B;font-size:16px\"\u003e\u0026#9679;\u003c/span\u003e Harm Reduction (3)" : feature_group_27effa2e7c9ad270867c2cd3e21dbe70,
+                    "\u003cspan style=\"color:#1F3FA8;font-size:16px\"\u003e\u0026#9679;\u003c/span\u003e Peaceful (2)" : feature_group_c7828b178af9e95fe30c116d0f6a91ce,
+                },
+            };
+            let layer_control_f3906f630cc1fc3afe79c75fe188b1af = L.control.layers(
+                layer_control_f3906f630cc1fc3afe79c75fe188b1af_layers.base_layers,
+                layer_control_f3906f630cc1fc3afe79c75fe188b1af_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_bd49dfd5fb6d2dfb73eec6cdf3a1bff5);
+
+        
+    
+            map_bd49dfd5fb6d2dfb73eec6cdf3a1bff5.fitBounds(
+                [[45.4265902, -75.685139], [45.44690375783638, -75.6107833]],
+                {}
+            );
+        
+    
+            tile_layer_cfc2467c535afa4ffe4d92537005eea3.addTo(map_bd49dfd5fb6d2dfb73eec6cdf3a1bff5);
+        
+    
+            feature_group_c0bb2c3f3bc26d857730c1c98960b7cc.addTo(map_bd49dfd5fb6d2dfb73eec6cdf3a1bff5);
+        
+    
+            feature_group_3377be5f37b91da17c84a61aaa00bae6.addTo(map_bd49dfd5fb6d2dfb73eec6cdf3a1bff5);
+        
+    
+            feature_group_eb155ceb0e0eed502418bc744eb13401.addTo(map_bd49dfd5fb6d2dfb73eec6cdf3a1bff5);
+        
+</script>
+</html>
